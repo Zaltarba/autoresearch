@@ -35,6 +35,7 @@ Available models (all in `models/`):
 **What you CAN do:**
 - Modify `ts_model.py` — everything is fair game: `MODEL_NAME`, `Config` dataclass values (d_model, n_heads, e_layers, d_ff, dropout, batch_size, learning_rate, etc.), the training loop, optimizer, loss function, LR schedule.
 - Modify individual model files in `models/` to try architectural changes (add residuals, change normalization, etc.)
+- Modify or extend files in `layers/` to add new reusable building blocks (new attention variants, embedding types, custom encoder/decoder blocks, etc.)
 
 **What you CANNOT do:**
 - Modify `ts_prepare.py`. It is read-only. It defines the fixed evaluation, data splits, TIME_BUDGET, SEQ_LEN, PRED_LEN.
